@@ -10,6 +10,8 @@
   margin: 0
   padding: 0
   box-sizing: border-box
+  // -webkit-appearance: none
+  // appearance: none
 
 // 新要素のblock達
 article,
@@ -88,6 +90,33 @@ button,
 [disabled]
   cursor: default
 
+[type="range"],
+[type="checkbox"],
+[type="file"]
+  -webkit-appearance: none
+
+
+// Safari 8+
+[type="search"]
+  -webkit-appearance: none
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"]
+  -webkit-appearance: none
+
+// iOS and Safari
+::-webkit-file-upload-button
+  -webkit-appearance: none
+  font: inherit
+
+// iOS and Safari chrome
+[type="search"]
+  -webkit-appearance: none
+  outline-offset: -2px
+
+
 // 以下ressを踏襲
 
 // FireFox36+
@@ -95,9 +124,6 @@ button,
   width: auto
 
 // Safari 8+
-[type="search"]
-  -webkit-appearance: textfield
-
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration
   -webkit-appearance: none
@@ -121,11 +147,6 @@ button:-moz-focusring,
 [type="submit"]::-moz-focus-inner
   outline: none
 
-button,
-html [type="button"],
-[type="reset"],
-[type="submit"]
-  -webkit-appearance: button
 
 // Firefox 40+, Internet Explorer 11-
 button,
@@ -152,13 +173,3 @@ legend
   display: table
   max-width: 100%
   white-space: normal
-
-// iOS and Safari
-::-webkit-file-upload-button
-  -webkit-appearance: button
-  font: inherit
-
-// iOS and Safari chrome
-[type="search"]
-  -webkit-appearance: textfield
-  outline-offset: -2px
