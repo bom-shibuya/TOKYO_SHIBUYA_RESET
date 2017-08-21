@@ -37,13 +37,16 @@ h5,
 h6,
 small
   font-size: 100%
-  font-weight: normal
+  font-weight: inherit
 
+th,
 dt,
-strong,
-b,
 optgroup
   font-weight: normal
+
+strong,
+b
+  font-weight: bold
 
 // なんかie10で背景がグレーになるのを防ぐのと、
 // iOS8+ safari8+で下に空白出るのを削除
@@ -69,7 +72,11 @@ progress,
 video
   display: inline-block
 
-
+// table
+table
+  border-collapse: collapse
+  border-spacing: 0
+  
 // フォーム系の振る舞い
 button,
 input,
