@@ -1,0 +1,24 @@
+{
+  "name": "tokyo-shibuya-reset",
+  "version": "1.0.0",
+  "description": "this is TOKYO SHIBUYA RESET for all style reset!!",
+  "main": "_reset.sass",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bom-shibuya/TOKYO_SHIBUYA_RESET.git"
+  },
+  "keywords": [
+    "sass",
+    "css",
+    "reset"
+  ],
+  "author": "bom-phage",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bom-shibuya/TOKYO_SHIBUYA_RESET/issues"
+  },
+  "homepage": "https://github.com/bom-shibuya/TOKYO_SHIBUYA_RESET#readme"
+}
